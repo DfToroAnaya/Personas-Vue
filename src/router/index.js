@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
 import Comunas from '../views/Comunas';
 import Municipios from '../views/Municipios';
+import Departamentos from '../views/Departamentos';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/municipios',
     name: 'Municipios',
     component: Municipios
+  },
+  {
+    path: '/departamentos',
+    name: 'Departamentos',
+    component: Departamentos
   },
   {
     path: '/about',
