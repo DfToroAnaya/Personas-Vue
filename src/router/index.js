@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import Comunas from '../views/Comunas';
 import Municipios from '../views/Municipios';
 import Departamentos from '../views/Departamentos';
+import Paises from '../views/Paises';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/departamentos',
     name: 'Departamentos',
     component: Departamentos
+  },
+  {
+    path: '/paises',
+    name: 'Paises',
+    component: Paises
   },
   {
     path: '/about',
