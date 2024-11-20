@@ -4,6 +4,8 @@ import Comunas from '../views/Comunas';
 import Municipios from '../views/Municipios';
 import Departamentos from '../views/Departamentos';
 import Paises from '../views/Paises';
+import EditarComuna from '../components/Comuna/EditarComuna.vue';
+import NewComuna from '../components/Comuna/NewComuna.vue';
 
 const routes = [
   {
@@ -15,6 +17,16 @@ const routes = [
     path: '/comunas',
     name: 'Comunas',
     component: Comunas
+  },
+  {
+    path: '/editar-comuna/:id',
+    name: 'EditarComuna',
+    component: EditarComuna
+  },
+  {
+    path: '/add-comuna/',
+    name: 'NewComuna',
+    component: NewComuna
   },
   {
     path: '/municipios',
