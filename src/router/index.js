@@ -10,6 +10,8 @@ import EditarMunicipio from '../components/Municipio/EditarMunicipio.vue';
 import NewMunicipio from '../components/Municipio/NewMunicipio.vue';
 import EditarDepartamento from '../components/Departamento/EditarDepartamento.vue';
 import NewDepartamento from '../components/Departamento/NewDepartamento.vue';
+import EditarPais from '../components/Pais/EditarPais.vue';
+import NewPais from '../components/Pais/NewPais.vue';
 
 const routes = [
   {
@@ -66,6 +68,16 @@ const routes = [
     path: '/paises',
     name: 'Paises',
     component: Paises
+  },
+  {
+    path: '/editar-pais/:id',
+    name: 'EditarPais',
+    component: EditarPais
+  },
+  {
+    path: '/add-pais/',
+    name: 'NewPais',
+    component: NewPais
   },
   {
     path: '/about',
